@@ -1,36 +1,43 @@
+/* :root {
+   font-size: calc(0.5em + 1vw);
+} */
+/* html, body {
+   font-size: calc(1rem + 1vw);
+ } */
+
 body {
    font-family: "Museo Sans Cyrl";
    overflow: hidden;
-   font-size: 2vh;
+   font-size: 1vw;
    height: 100vh;
    color: #282828;
-
 }
+
 .wrapper {
    position: relative;
-} 
+}
 
 .container {
    width: 85vw;
    margin: 0 auto;
 }
 
-
 .row {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-top: 5vh;
+   padding-top: 3vw;
 }
 .row__logo {
 }
 
-.img {
-   width: 11vw;
+.img__logo {
+   max-width: 15vw;
+   
 }
 
 .row__text {
-   font-size: 1.6vh;
+   font-size: 0.7vw;
    max-width: 8.6vw;
    margin-left: -3vw;
    line-height: 2vh;
@@ -38,32 +45,114 @@ body {
 }
 
 .row__map {
-   max-width: 11vw;
-   font-size: 2vh;
-   p:first-child{
+   display: flex;
+   align-items: center;
+   max-width: 17vw;
+   font-size: 1vw;
+   p:first-child {
       font-weight: 700;
-      line-height: 2vh;
+      line-height: 1vw;
    }
 
-   p:nth-child(2){
-      line-height: 4vh;
+   p:nth-child(2) {
+      line-height: 1.4vw;
    }
 }
 
+.image__map {
+   img {
+      width: 4vw;
+   }
+}
 
-
+.text__map {
+   margin-left: 1vw;
+}
 
 .hover__map {
+   color: #ff6078;
+   text-decoration: underline;
+   letter-spacing: 0.07vw;
 }
 .row__contacts {
+   padding-left: 3vw;
 }
 .row__tel {
+   position: relative;
+   p{
+      padding-left: 0.6vw;
+  /*     position: relative; */
+      font-size: 0.7vw;
+      letter-spacing: 0.08vw;
+      line-height: 1vw;
+      &::before{
+         content: '';
+         position: absolute;
+         top: 0.5vh;
+         left: 0;
+         width: 0.4vw;
+         height: 0.4vw;
+         background: #27b24b;
+         border-radius: 50%;
+         box-shadow: 0 0 7vw rgba(79, 160, 55, 0.61);
+      }
+   }
+
+   a{
+      color: #282828;
+      font-size: 1.5vw;
+      line-height: 2vw;
+      letter-spacing: 0.09vw;
+   }
 }
+
+.image__contacts{
+   width: 4vw;
+   position: absolute;
+   left: -3.5vw;
+  bottom: -0.6vw;
+}
+
 .link__tel {
 }
+
+
+
 .row__schedule {
+   font-size: 1.1vw;
+   line-height: 2.5vw;
+   position: relative;
+   font-weight: 700;
+   span{
+      margin-right: 0.3vw;
+      font-weight: 300;
+   }
 }
+
+.image__schedule{
+   width: 4vw;
+   position: absolute;
+   left: -3.5vw;
+  bottom: -1vw;
+}
+
+
 .row__botton {
+   background-color: #fefcfb;
+   box-shadow: 0vw 0.04vw 0.09vw 0vw #666;
+   position: relative;
+   border-radius: 5vw;
 }
 .btn {
+   display: inline-block;
+   padding: 1.1vw 1vw 1vw 2vw;
+   color: #1f1d1d;
+   
+}
+
+.image__botton{
+   width: 1.1vw;
+   position: absolute;
+   top: 1vw;
+   left: 0.5vw;
 }
