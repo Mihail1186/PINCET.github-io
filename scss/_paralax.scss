@@ -12,7 +12,7 @@
 
 
 .image__2{
-   margin-top: 20vh;
+   margin-top: 15vw;
    width: 20vw;
    margin-left: 2vw;
 }
@@ -22,11 +22,17 @@
 }
 
 .image__4{
+   width: 14vw;
+   margin-top: 25vw;
+   margin-left: 50vw;
+}
+
+.image__5{
    position: absolute;
    bottom: 0;
 
    img{
       width: 100vw;
-      height: 16vh;
+      height: 13vh;
    }
 }

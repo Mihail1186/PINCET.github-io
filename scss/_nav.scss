@@ -1,0 +1,24 @@
+.nav {
+   margin-top: 1vw;
+}
+
+.nav__inner {
+   padding: 1vw;
+   background-color: #fff;
+   border-radius: 0.5vw;
+}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   list-style-type: none;
+   li{
+      font-weight: 700;
+      a{
+         font-weight: 300;
+         color: #282828;
+      }
+      
+   }
+}
+

@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image__2 {
-  margin-top: 20vh;
+  margin-top: 15vw;
   width: 20vw;
   margin-left: 2vw;
 }
@@ -118,21 +118,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image__4 {
+  width: 14vw;
+  margin-top: 25vw;
+  margin-left: 50vw;
+}
+
+.image__5 {
   position: absolute;
   bottom: 0;
 }
 
-.image__4 img {
+.image__5 img {
   width: 100vw;
-  height: 16vh;
+  height: 13vh;
 }
 
-/* :root {
-   font-size: calc(0.5em + 1vw);
-} */
-/* html, body {
-   font-size: calc(1rem + 1vw);
- } */
 body {
   font-family: "Museo Sans Cyrl";
   overflow: hidden;
@@ -160,7 +160,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 3vw;
+  padding-top: 2vw;
 }
 
 .img__logo {
@@ -334,4 +334,33 @@ body {
   position: absolute;
   top: 1vw;
   left: 0.5vw;
+}
+
+.nav {
+  margin-top: 1vw;
+}
+
+.nav__inner {
+  padding: 1vw;
+  background-color: #fff;
+  border-radius: 0.5vw;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.menu li {
+  font-weight: 700;
+}
+
+.menu li a {
+  font-weight: 300;
+  color: #282828;
 }
