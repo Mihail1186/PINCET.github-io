@@ -1,0 +1,70 @@
+body {
+   font-family: "Museo Sans Cyrl";
+   overflow: hidden;
+   font-size: 2vh;
+   height: 100vh;
+   color: #282828;
+
+}
+.wrapper {
+   position: relative;
+} 
+
+.container {
+   width: 85vw;
+   margin: 0 auto;
+/*    padding: 1vh 0.4vw; */
+}
+
+
+.row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 5vh;
+}
+.row__logo {
+}
+
+.img {
+   width: 11vw;
+}
+
+.row__text {
+   font-size: 1.6vh;
+   max-width: 8.6vw;
+   margin-left: -3vw;
+   line-height: 2vh;
+   letter-spacing: 0.07vw;
+}
+
+.row__map {
+   max-width: 11vw;
+   font-size: 2vh;
+   p:first-child{
+      font-weight: 700;
+      line-height: 2vh;
+   }
+
+   p:nth-child(2){
+      line-height: 4vh;
+   }
+}
+
+
+
+
+.hover__map {
+}
+.row__contacts {
+}
+.row__tel {
+}
+.link__tel {
+}
+.row__schedule {
+}
+.row__botton {
+}
+.btn {
+}
