@@ -33,7 +33,6 @@ body {
 
 .img__logo {
    max-width: 15vw;
-   
 }
 
 .row__text {
@@ -79,14 +78,24 @@ body {
 }
 .row__tel {
    position: relative;
-   p{
+   &::before {
+      content: "";
+      position: absolute;
+      top: 0.04vw;
+      left: -0.2vw;
+      width: 0.8vw;
+      height: 0.8vw;
+      border: 1px solid #27b24b;
+      border-radius: 50%;
+      animation: row__tel 1s linear infinite;
+   }
+   p {
       padding-left: 0.6vw;
-  /*     position: relative; */
       font-size: 0.7vw;
       letter-spacing: 0.08vw;
       line-height: 1vw;
-      &::before{
-         content: '';
+      &::before {
+         content: "";
          position: absolute;
          top: 0.5vh;
          left: 0;
@@ -98,7 +107,21 @@ body {
       }
    }
 
-   a{
+   @keyframes row__tel {
+      0% {
+         transform: scale(0.5);
+         opacity: 0;
+      }
+      50% {
+         opacity: 1;
+      }
+      100% {
+         transform: scale(1.2);
+         opacity: 0;
+      }
+   }
+
+   a {
       color: #282828;
       font-size: 1.5vw;
       line-height: 2vw;
@@ -106,36 +129,33 @@ body {
    }
 }
 
-.image__contacts{
+.image__contacts {
    width: 4vw;
    position: absolute;
    left: -3.5vw;
-  bottom: -0.6vw;
+   bottom: -0.6vw;
 }
 
 .link__tel {
 }
-
-
 
 .row__schedule {
    font-size: 1.1vw;
    line-height: 2.5vw;
    position: relative;
    font-weight: 700;
-   span{
+   span {
       margin-right: 0.3vw;
       font-weight: 300;
    }
 }
 
-.image__schedule{
+.image__schedule {
    width: 4vw;
    position: absolute;
    left: -3.5vw;
-  bottom: -1vw;
+   bottom: -1vw;
 }
-
 
 .row__botton {
    background-color: #fefcfb;
@@ -147,10 +167,9 @@ body {
    display: inline-block;
    padding: 1.1vw 1vw 1vw 2vw;
    color: #1f1d1d;
-   
 }
 
-.image__botton{
+.image__botton {
    width: 1.1vw;
    position: absolute;
    top: 1vw;
