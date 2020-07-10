@@ -1,4 +1,3 @@
-
 body {
    font-family: "Museo Sans Cyrl";
    overflow: hidden;
@@ -8,8 +7,9 @@ body {
 }
 
 .wrapper {
-   position: relative;
-}
+    position: relative;
+    background-image: url("img/Слой_1.png");
+} 
 
 .container {
    width: 85vw;
@@ -20,18 +20,18 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-top: 2vw;
+   padding-top: 1vw;
 }
 
 .img__logo {
-   max-width: 15vw;
+   width: 13vw;
 }
 
 .row__text {
    font-size: 0.7vw;
    max-width: 8.6vw;
    margin-left: -3vw;
-   line-height: 2vh;
+   line-height: 1vw;
    letter-spacing: 0.07vw;
 }
 
@@ -73,24 +73,24 @@ body {
    &::before {
       content: "";
       position: absolute;
-      top: 0.04vw;
-      left: -0.2vw;
-      width: 0.8vw;
-      height: 0.8vw;
-      border: 1px solid #27b24b;
+      top: -0.06vw;
+      left: -0.23vw;
+      width: 0.9vw;
+      height: 0.9vw;
+      border: 0.2vw solid #27b24b;
       border-radius: 50%;
       animation: row__tel 1s linear infinite;
    }
    p {
-      padding-left: 0.6vw;
+      padding-left: 0.9vw;
       font-size: 0.7vw;
       letter-spacing: 0.08vw;
       line-height: 1vw;
       &::before {
          content: "";
          position: absolute;
-         top: 0.5vh;
-         left: 0;
+         top: 0.21vw;
+         left: -0.001vw;
          width: 0.4vw;
          height: 0.4vw;
          background: #27b24b;

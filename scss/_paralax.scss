@@ -30,9 +30,19 @@
 .image__5{
    position: absolute;
    bottom: 0;
-
+   z-index: 2;
    img{
       width: 100vw;
       height: 13vh;
+   }
+}
+
+.image__6{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   z-index: 0;
+   img{
+      width: 36vw;
    }
 }
