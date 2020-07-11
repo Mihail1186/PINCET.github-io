@@ -1,10 +1,12 @@
 .popup {
    position: absolute;
-   top: 8vw;
+   top: 7vw;
    left: 35vw;
    width: 33vw;
    background: #fcf0eb;
    border-radius: 1.5vw;
+    opacity: 0;
+   visibility: hidden;
 }
 
 .popup__body {
@@ -13,16 +15,16 @@
 
 .popup__content:after {
    content: "";
-   background: url("./img/popup/overlay_копия_3.png");
+   background: url("../img/popup/overlay_копия_3.png");
    position: absolute;
    background-repeat: no-repeat;
    background-size: 100% 100%;
    position: absolute;
-   left: 4.5vw;
-   bottom: 2.4vw;
-   width: 100vw;
-   height: 15vw;
-   z-index: 10;
+   left: -7.5vw;
+   bottom: 4.4vw;
+   width: 13vw;
+   height: 19vw;
+   z-index: 1;
 }
 
 .popup__close {
@@ -70,6 +72,8 @@
    letter-spacing: 0.04vw;
    border-radius: 2vw;
    color: #989797;
+   position: relative;
+   z-index: 2;
 }
 
 input {
@@ -83,15 +87,14 @@ input {
 
 .popup__btn:after {
    content: "";
-   background: url("./img/popup/лилия.png");
+   background: url("../img/popup/лилия.png");
    background-repeat: no-repeat;
    background-size: 100% 100%;
    position: absolute;
-   right: 1vw;
-   bottom: 2.4vw;
-   width: 9vw;
-   height: 2.5vw;
-   z-index: 67;
+   right: -1vw;
+   bottom: 3.3vw;
+   width: 13vw;
+   height: 3.3vw;
 }
 
 
@@ -114,7 +117,7 @@ input {
 
 
 
-
+/* -----------popup__litle------------ */
 
 
 
@@ -122,17 +125,19 @@ input {
 
 .popup__litle {
    position: absolute;
-   top: 10vw;
-   left: 5vw;
+   top: 20vw;
+   left: 40vw;
    width: 17vw;
    height: 10vw;
    background: #fbf5f2;
    border-radius: 1.5vw;
+   opacity: 0;
+   visibility: hidden;
 }
 
 .popup__litle-body::after {
    content: "";
-   background-image: url("img/popup/3-layers.png");
+   background-image: url("../img/popup/3-layers.png");
    width: 4vw;
    height: 6vw;
    background-repeat: no-repeat;
