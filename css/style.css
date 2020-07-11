@@ -545,7 +545,7 @@ body {
   position: absolute;
   left: 11.3vw;
   bottom: 6vw;
-  z-index: 5;
+  z-index: 1;
   width: 2vw;
 }
 
@@ -579,6 +579,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+  z-index: 3;
   background: #161515a6;
   opacity: 0;
   visibility: hidden;
@@ -721,6 +722,7 @@ input {
   height: 100%;
   left: 0;
   top: 0;
+  z-index: 3;
   background: #161515a6;
   opacity: 0;
   visibility: hidden;
