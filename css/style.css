@@ -451,7 +451,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
-  right: -2vw;
+  right: -5vw;
   top: 0.4vw;
   width: 14vw;
   height: 3.5vw;
@@ -566,7 +566,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: 10vw;
+  margin-bottom: 3vw;
 }
 
 .content__image-footer img {
@@ -574,17 +574,41 @@ body {
 }
 
 .popup {
-  position: absolute;
-  top: 7vw;
-  left: 35vw;
-  width: 33vw;
-  background: #fcf0eb;
-  border-radius: 1.5vw;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #161515a6;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup__body {
+  background: #fcf0eb;
+  border-radius: 1.5vw;
+  position: fixed;
+  top: 7vw;
+  left: 35vw;
+  width: 33vw;
+}
+
+.popup__content {
   padding: 3vw 3vw;
 }
 
@@ -692,6 +716,24 @@ input {
 
 /* -----------popup__litle------------ */
 .popup__litle {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #161515a6;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.popup__litle:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__litle-body {
   position: absolute;
   top: 20vw;
   left: 40vw;
@@ -699,30 +741,40 @@ input {
   height: 10vw;
   background: #fbf5f2;
   border-radius: 1.5vw;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .popup__litle-body::after {
   content: "";
-  background-image: url("../img/popup/3-layers.png");
+  background: url("../img/popup/3-layers.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   width: 4vw;
   height: 6vw;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   position: absolute;
   right: 0vw;
   bottom: 0vw;
 }
 
-.popup__litle-content {
+.popup__litle-close {
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+}
+
+.popup__litle-close img {
+  display: inline-block;
+  width: 1vw;
+  height: 1vw;
+}
+
+.popup__litle-title {
   text-align: center;
   padding: 5vw 2vw 0vw 2vw;
 }
 
 .popup__litle-title::before {
   content: "";
-  background-image: url("img/popup/Галочка.png");
+  background-image: url("../img/popup/Галочка.png");
   width: 5vw;
   height: 5vw;
   background-repeat: no-repeat;
@@ -736,4 +788,21 @@ input {
   font-weight: 700;
   letter-spacing: 0.05vw;
   line-height: 1.6vw;
+}
+
+.google__body {
+  position: fixed;
+  top: 6vw;
+  left: 35vw;
+  width: 33vw;
+  display: none;
+  /*    opacity: 0;
+   visibility: hidden; */
+  /* transition: all 0.2s ease 0s;  */
+}
+
+.hover__map:hover .google__map {
+  display: block;
+  /*    opacity: 1;
+   visibility: visible; */
 }

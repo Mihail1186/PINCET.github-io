@@ -7,9 +7,9 @@ body {
 }
 
 .wrapper {
-    position: relative;
-    background-image: url("img/Слой_1.png");
-} 
+   position: relative;
+   background-image: url("img/Слой_1.png");
+}
 
 .container {
    width: 85vw;
@@ -60,11 +60,15 @@ body {
    margin-left: 1vw;
 }
 
+
 .hover__map {
    color: #ff6078;
    text-decoration: underline;
    letter-spacing: 0.07vw;
 }
+
+
+
 .row__contacts {
    padding-left: 3vw;
 }
