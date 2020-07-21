@@ -151,6 +151,8 @@ body {
   font-size: 1vw;
   height: 100vh;
   color: #282828;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .wrapper {
@@ -792,19 +794,52 @@ input {
   line-height: 1.6vw;
 }
 
-.google__body {
-  position: fixed;
-  top: 6vw;
-  left: 35vw;
-  width: 33vw;
-  display: none;
-  /*    opacity: 0;
-   visibility: hidden; */
-  /* transition: all 0.2s ease 0s;  */
+.ldsh {
+  font-size: 0.85vw;
+  border-bottom: 1px solid #379ab1;
+  color: #3ab7c2;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: none !important;
 }
 
-.hover__map:hover .google__map {
-  display: block;
-  /*    opacity: 1;
-   visibility: visible; */
+.ldsh:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-bottom: 1px dashed #3ab7c2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.map-header.active {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.map-header {
+  position: absolute;
+  width: 21vw;
+  height: 17vw;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 0 13px rgba(211, 211, 211, 0.11);
+  box-shadow: 3px 0 13px rgba(211, 211, 211, 0.11);
+  top: 12%;
+  left: 45%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 57;
 }
