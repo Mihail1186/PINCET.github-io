@@ -4,3 +4,11 @@ $(document).ready(function () {
    })
 
 })
+
+
+$(document).ready(function () {
+   $('.link__pulse').hover(function (event) {
+      $('.content__hover-inner').toggleClass('active');
+   })
+
+})

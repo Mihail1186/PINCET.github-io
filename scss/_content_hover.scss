@@ -1,0 +1,33 @@
+
+.link__pulse{
+   position: relative;
+   z-index: 10;
+}
+
+
+.content__hover{
+   position: relative;
+}
+
+.content__hover-inner{
+   position: absolute;
+   left: 15vw;
+   top: -2vw;
+   text-align: center;
+   background-image: url('../img/2-layers.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 0;
+   font-size: 0.85vw;
+   max-width: 10vw;
+   height: 11vw;
+   overflow: hidden;
+   padding: 2vw;
+   transition: all 0.4s;
+}
+
+
+.content__hover-inner.active{
+   opacity: 1;
+   pointer-events: auto;
+}

@@ -575,6 +575,38 @@ body {
   width: 100vw;
 }
 
+.link__pulse {
+  position: relative;
+  z-index: 10;
+}
+
+.content__hover {
+  position: relative;
+}
+
+.content__hover-inner {
+  position: absolute;
+  left: 15vw;
+  top: -2vw;
+  text-align: center;
+  background-image: url("../img/2-layers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  font-size: 0.85vw;
+  max-width: 10vw;
+  height: 11vw;
+  overflow: hidden;
+  padding: 2vw;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.content__hover-inner.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .popup {
   position: fixed;
   width: 100%;
@@ -795,14 +827,15 @@ input {
 }
 
 .ldsh {
+  color: #fa2a2a;
   font-size: 0.85vw;
-  border-bottom: 1px solid #379ab1;
-  color: #3ab7c2;
+  border-bottom: 1px solid #fa2a2a;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  /*    -webkit-transition: all 0.4s;
+   -o-transition: all 0.4s;
+   transition: all 0.4s; */
   border: none !important;
 }
 
@@ -811,7 +844,7 @@ input {
   position: absolute;
   top: 100%;
   width: 100%;
-  border-bottom: 1px dashed #3ab7c2;
+  border-bottom: 0.1vw dashed #fa2a2a;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -841,5 +874,5 @@ input {
   pointer-events: none;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  z-index: 57;
+  z-index: 5;
 }
