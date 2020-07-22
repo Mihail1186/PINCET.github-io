@@ -1,0 +1,118 @@
+.nav__burger {
+   display: none;
+}
+
+@media (max-width: 900px) {
+   body.lock {
+      overflow: hidden;
+   }
+
+   .nav__burger {
+      display: block;
+      position: relative;
+      width: 35px;
+      height: 25px;
+      position: relative;
+      z-index: 12;
+
+      span {
+         position: absolute;
+         left: 0;
+         width: 100%;
+         height: 0.17rem;
+         top: 12px;
+         z-index: 12;
+         background: rgb(185, 43, 43);
+         transition: all 0.3s ease 0s;
+      }
+
+      &::before,
+      &::after {
+         content: "";
+         background: rgb(185, 43, 43);
+         position: absolute;
+         width: 100%;
+         height: 0.17rem;
+         left: 0;
+         transition: all 0.3s ease 0s;
+         z-index: 12;
+      }
+
+      &::before {
+         top: 0;
+      }
+
+      &::after {
+         bottom: 0;
+      }
+
+      &.active span {
+         transform: scale(0);
+      }
+
+      &.active::before {
+         transform: rotate(45deg);
+         top: 11px;
+      }
+
+      &.active::after {
+         transform: rotate(-45deg);
+         bottom: 11px;
+      }
+   }
+
+   .menu {
+      text-align: center;
+      position: fixed;
+      top: -130%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 110px;
+      display: block;
+      transition: all 0.3s ease 0s;
+      overflow: auto;
+      z-index: 11;
+      li a {
+         font-size: 16px;
+         color: rgba(0, 0, 0, 0.726);
+         &:hover {
+            background: rgba(0, 0, 0, 0);
+         }
+      }
+   }
+
+
+   .row__logo{
+   }
+
+
+
+
+   .menu.active {
+      background: #ffffff;
+      top: 0px;
+      left: 0px;
+   }
+
+   .menu li + li {
+      padding-top: 15px;
+      margin-left: 0px;
+   }
+
+   .row {
+      padding-top: 40px;
+   }
+
+
+
+   .row__map {
+      display: none;
+   }
+
+   .nav__inner {
+      background-color: rgba(192, 188, 188, 0);
+   }
+
+
+}
