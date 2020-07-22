@@ -19,14 +19,16 @@
    top: 100%;
    width: 100%;
    border-bottom: 0.1vw dashed #fa2a2a;
-   left: 50%;
-   -webkit-transform: translateX(-50%);
-   -ms-transform: translateX(-50%);
-   transform: translateX(-50%);
-   -webkit-transition: all 0.4s;
-   -o-transition: all 0.4s;
+   left: 0%;
    transition: all 0.4s;
 }
+
+.ldsh:hover:before{
+   transition: all 0.4s;
+   width: 50%;
+   position: absolute;
+   left: 25%;
+} 
 
 
 

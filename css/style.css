@@ -845,11 +845,17 @@ input {
   top: 100%;
   width: 100%;
   border-bottom: 0.1vw dashed #fa2a2a;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  left: 0%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.ldsh:hover:before {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 50%;
+  position: absolute;
+  left: 25%;
 }
 
 .map-header.active {
