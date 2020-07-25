@@ -599,8 +599,8 @@ body {
   position: absolute;
   left: 14.25vw;
   top: 11.6vw;
-  -webkit-animation: row__tel 1s linear infinite;
-          animation: row__tel 1s linear infinite;
+  -webkit-animation: image-pulse 1s linear infinite;
+          animation: image-pulse 1s linear infinite;
 }
 
 @-webkit-keyframes image-pulse {
@@ -638,8 +638,8 @@ body {
 .img__pulse {
   display: inline-block;
   position: relative;
-  left: 14vw;
-  top: 11.4vw;
+  left: 0vw;
+  top: 0vw;
   width: 4vw;
 }
 
@@ -648,40 +648,46 @@ body {
   width: 100%;
 }
 
-.content__image-pulse {
+.content__img-pulse {
   position: absolute;
   left: 11.3vw;
   bottom: 6.3vw;
-  z-index: 1;
+  z-index: 11;
 }
 
-.content__image-pulse::after {
+.content__img-pulse img {
+  width: 2vw;
+}
+
+.content__img-pulse::after {
   content: "";
   position: absolute;
   top: -1.5vw;
   left: -1.5vw;
   width: 5vw;
   height: 5vw;
+  z-index: 2;
   border: 0.01vw solid #ffffff;
   border-radius: 9vw;
-  -webkit-animation: content__image-pulse 2s linear infinite;
-          animation: content__image-pulse 2s linear infinite;
+  -webkit-animation: content__img-pulse 2s linear infinite;
+          animation: content__img-pulse 2s linear infinite;
 }
 
-.content__image-pulse::before {
+.content__img-pulse::before {
   content: "";
   position: absolute;
   top: -2.5vw;
   left: -2.5vw;
   width: 7vw;
   height: 7vw;
+  z-index: 10;
   border: 0.01vw solid #ffffff;
   border-radius: 9vw;
-  -webkit-animation: content__image-pulse 2s linear infinite;
-          animation: content__image-pulse 2s linear infinite;
+  -webkit-animation: content__img-pulse 2s linear infinite;
+          animation: content__img-pulse 2s linear infinite;
 }
 
-@-webkit-keyframes content__image-pulse {
+@-webkit-keyframes content__img-pulse {
   0% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
@@ -697,7 +703,7 @@ body {
   }
 }
 
-@keyframes content__image-pulse {
+@keyframes content__img-pulse {
   0% {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
@@ -711,10 +717,6 @@ body {
             transform: scale(1.2);
     opacity: 0;
   }
-}
-
-.content__img-pulse {
-  width: 2vw;
 }
 
 .content__image-vooman {
@@ -744,6 +746,8 @@ body {
 .link__pulse {
   position: relative;
   z-index: 10;
+  left: 14vw;
+  top: 11.4vw;
 }
 
 .content__hover {
@@ -779,7 +783,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 3;
+  z-index: 13;
   background: #161515a6;
   opacity: 0;
   visibility: hidden;
@@ -824,7 +828,7 @@ body {
   bottom: 4.4vw;
   width: 13vw;
   height: 19vw;
-  z-index: 1;
+  z-index: 13;
 }
 
 .popup__close {
@@ -874,7 +878,7 @@ body {
   border-radius: 2vw;
   color: #989797;
   position: relative;
-  z-index: 2;
+  z-index: 12;
 }
 
 input {
@@ -922,7 +926,7 @@ input {
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 3;
+  z-index: 13;
   background: #161515a6;
   opacity: 0;
   visibility: hidden;
