@@ -984,15 +984,14 @@ input {
 }
 
 .ldsh {
-  color: #fa2a2a;
+  color: #f57e88;
   font-size: 0.85vw;
-  border-bottom: 1px solid #fa2a2a;
+  border-bottom: 1px solid #f57e88;
   display: inline-block;
   position: relative;
   cursor: pointer;
-  /*    -webkit-transition: all 0.4s;
-   -o-transition: all 0.4s;
-   transition: all 0.4s; */
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   border: none !important;
 }
 
@@ -1001,7 +1000,7 @@ input {
   position: absolute;
   top: 100%;
   width: 100%;
-  border-bottom: 0.1vw dashed #fa2a2a;
+  border-bottom: 0.1vw dashed #f57e88;
   left: 0%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
