@@ -61,31 +61,17 @@ body {
    margin-left: 1vw;
 }
 
-
 .hover__map {
    color: #ff6078;
    text-decoration: underline;
    letter-spacing: 0.07vw;
 }
 
-
-
 .row__contacts {
    padding-left: 3vw;
 }
 .row__tel {
    position: relative;
-   &::before {
-      content: "";
-      position: absolute;
-      top: -0.06vw;
-      left: -0.23vw;
-      width: 0.9vw;
-      height: 0.9vw;
-      border: 0.2vw solid #27b24b;
-      border-radius: 50%;
-      animation: row__tel 1s linear infinite;
-   }
    p {
       padding-left: 0.9vw;
       font-size: 0.7vw;
@@ -94,7 +80,7 @@ body {
       &::before {
          content: "";
          position: absolute;
-         top: 0.21vw;
+         top: 0.31vw;
          left: -0.001vw;
          width: 0.4vw;
          height: 0.4vw;
@@ -104,7 +90,7 @@ body {
       }
    }
 
-   @keyframes row__tel {
+     @keyframes row__tel {
       0% {
          transform: scale(0.5);
          opacity: 0;
@@ -116,7 +102,7 @@ body {
          transform: scale(1.2);
          opacity: 0;
       }
-   }
+   } 
 
    a {
       color: #282828;

@@ -232,19 +232,6 @@ body {
   position: relative;
 }
 
-.row__tel::before {
-  content: "";
-  position: absolute;
-  top: -0.06vw;
-  left: -0.23vw;
-  width: 0.9vw;
-  height: 0.9vw;
-  border: 0.2vw solid #27b24b;
-  border-radius: 50%;
-  -webkit-animation: row__tel 1s linear infinite;
-          animation: row__tel 1s linear infinite;
-}
-
 .row__tel p {
   padding-left: 0.9vw;
   font-size: 0.7vw;
@@ -255,7 +242,7 @@ body {
 .row__tel p::before {
   content: "";
   position: absolute;
-  top: 0.21vw;
+  top: 0.31vw;
   left: -0.001vw;
   width: 0.4vw;
   height: 0.4vw;
