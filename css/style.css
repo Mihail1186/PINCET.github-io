@@ -218,12 +218,6 @@ body {
   margin-left: 1vw;
 }
 
-.hover__map {
-  color: #ff6078;
-  text-decoration: underline;
-  letter-spacing: 0.07vw;
-}
-
 .row__contacts {
   padding-left: 3vw;
 }
@@ -952,7 +946,9 @@ input {
 }
 
 .ldsh {
+  padding-top: 0.5vw;
   color: #f57e88;
+  letter-spacing: 0.07vw;
   font-size: 0.85vw;
   border-bottom: 1px solid #f57e88;
   display: inline-block;
