@@ -90,19 +90,6 @@ body {
       }
    }
 
-     @keyframes row__tel {
-      0% {
-         transform: scale(0.5);
-         opacity: 0;
-      }
-      50% {
-         opacity: 1;
-      }
-      100% {
-         transform: scale(1.2);
-         opacity: 0;
-      }
-   } 
 
    a {
       color: #282828;
